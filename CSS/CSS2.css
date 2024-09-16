@@ -1,0 +1,25 @@
+/*Tag Selector*/
+ul{
+    list-style: circle;
+}
+/*Class Selector*/
+.item1{
+    color: brown;
+}
+/*id Selector*/
+#heading{
+    font-size: 100px;
+}
+/*Attribute Selector*/
+p[data-type="paragraph"]{
+    font-style: oblique;
+}
+/*Descendant Selector*/
+.container ul{
+    margin: 100px;
+}
+/*Universal Selector*/
+*{
+    box-sizing: border-box;
+    background-color: coral;
+}
