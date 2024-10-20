@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Enter your Name:</label>
+    <input id="inputElement" type="text" >
+    <button id="submit">Submit</button>
+    <br><br><br>
+    <button id="mybtn">Click me</button>
+</body>
+<script>
+    //1. Add event listeners to elements in the DOM. An event listener is a function that is called when a specific event occurs on an element. 
+    const btn = document.getElementById("mybtn");
+    btn.addEventListener("click",function(){
+        alert("Button is clicked");
+    });
+
+    const inputText = document.getElementById('inputElement');
+    const a2 = document.getElementById('submit');
+
+    a2.addEventListener("click",function(){
+        const a3 = inputText.value;
+        alert(`Hi ${a3} Nandini`)
+    })
+
+
+
+</script>
+</html>

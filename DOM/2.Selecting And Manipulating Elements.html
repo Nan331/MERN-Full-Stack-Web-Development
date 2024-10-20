@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="abc">First Element</div>
+    <div class="abcd">Second Element</div>
+    <div class="abcde">Third Element</div>
+    <div class="container"></div>
+        <p>This is a paragraph element inside a div</p>
+        <p>This is another paragraph element inside a div</p>
+      </div>
+    <a  id="myLink" href="https://www.google.com/search?q=google+translate&rlz=1C1CHZN_enIN1039IN1039&oq=goo&gs_lcrp=EgZjaHJvbWUqDQgCEAAYgwEYsQMYgAQyBggAEEUYOTITCAEQLhiDARjHARixAxjRAxiABDINCAIQABiDARixAxiABDIGCAMQRRg8MgYIBBBFGEEyBggFEEUYQTIGCAYQRRhBMgYIBxBFGDzSAQgzNjQ1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8">Link</a>
+</body>
+    <script>
+        //1. getElementById():  It returns an array-like object of all the elements found.
+        const A = document.getElementById("abc");
+        A.innerHTML = "New First Element"; //To change the content of an element we use innerHtml
+
+        //2. getElementsByClassName(): 
+        const B = document.getElementsByClassName("abcd");
+        B[0].innerHTML = "billo"
+
+        //3.querySelector(): This method is used to select the first element that matches a specified CSS selector. It returns the element object if found, or null if no element matches the selector.
+        const C = document.querySelector(".abcde");
+        C.innerHTML = "New items ..added billos"
+
+        //4. querySelectorAll(): This method is used to select all elements that match a specified CSS selector. It returns an array-like object of all the elements found.
+        const D = document.querySelectorAll(".abcde");
+        for (let i = 0; i < D.length; i++){
+            D[i].style.color = "red"
+        }
+
+        //To change the value of an attribute, you can use the setAttribute() method:
+        const E = document.getElementById("myLink");
+        E.setAttribute("href","https://www.youtube.com/");
+    </script>
+</html>
